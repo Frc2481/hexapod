@@ -26,17 +26,17 @@ Servo leftLeg;
 Servo rightLeg;
 
 void setup() {
-
+  // put your setup code here, to run once:
   midLeg.attach(3);
   leftLeg.attach(5);  
   rightLeg.attach(6);
 }
 bool first = 1;
 void loop() {
-
+  // put your main code here, to run repeatedly:
   if (first) {
     first = 0;
-    
+    //setMidLeg(MID_LEG_LIFT_LEFT);
     walkFwd();
     walkFwd();
     walkFwd();
@@ -75,9 +75,11 @@ void walkFwd() {
 }
 
 void walkRev() {
+  //TODO: Implement
 }
 
 void walkLeft() {
+  //TODO: Implement
 }
 
 void walkRight() {
@@ -91,6 +93,7 @@ void walkRight() {
   setRightLeg(RIGHT_LEG_FWD);
   setLeftLeg(LEFT_LEG_FWD);
   delay(500);
+  //TODO: Implement
 }
 
 void setMidLeg(int val) {
